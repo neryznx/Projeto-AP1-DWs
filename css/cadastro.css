@@ -56,11 +56,13 @@ body{
 
 
 
-.formulario .botao{
+.formulario .btn-enviar{
     background-color: var(--cor-secunda);
     color: #FFFFFF;
     width: 400px; 
     margin-bottom: 60px;
+    border: none;
+    cursor: pointer;
 }
 
 .obrigatorio {
