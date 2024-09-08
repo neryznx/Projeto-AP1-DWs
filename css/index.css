@@ -1,0 +1,41 @@
+body{
+  font-family: "Oswald", sans-serif;
+}
+
+.bg {
+  height: 75px;
+  background-color: #8a0015;
+}
+
+.font-padrao{
+  color:#fff
+}
+
+.teste{
+  color: #000;
+}
+.accordion {
+    background-color: #8a0015; 
+    color: white ;
+    cursor: pointer;
+    padding-top: 47px;
+    width: 60%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 1.0s;
+  }
+
+  
+  .accordion.active {
+    background-color: #8a0015;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    color: black;
+    display: none;
+    overflow: hidden;
+  }

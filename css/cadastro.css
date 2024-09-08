@@ -1,0 +1,91 @@
+:root {
+    --cor-primeira: #332d27;
+    --cor-secunda: #8a0015;
+    --cor-terceira: #e30224;
+    --cor-quarta: #85725f;
+    --cor-quinta: #fae1c0;
+}
+body{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+}
+.container{
+    width: 670px;
+    height: 720px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 150px 1px black;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario input{
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.formulario  #terms{
+    width: 35px;
+    height: 25px;
+    margin-left: 100px;
+    
+}
+
+.termos{
+    list-style: none;
+    display: flex;
+    margin-left: -120px;
+}
+
+.aceite{
+    margin-top: -7px;
+}
+
+
+
+.formulario .botao{
+    background-color: var(--cor-secunda);
+    color: #FFFFFF;
+    width: 400px; 
+    margin-bottom: 60px;
+}
+
+.obrigatorio {
+    visibility: hidden;
+}
+
+.input-box{
+    width: 300px;
+    height: 70px;
+}
+
+
+
+
+
+
+.campo-obrigatorio {
+    visibility: visible;
+    color: #f01e1e;
+}
+
+.erro {
+    border: 2px solid #da0909;
+}
+
+.valido {
+    border: 2px solid #3CCC87;
+}

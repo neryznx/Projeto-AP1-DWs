@@ -1,0 +1,11 @@
+body{
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --cor-primeira: #332d27;
+    --cor-secunda: #8a0015;
+    --cor-terceira: #e30224;
+    --cor-quarta: #85725f;
+    --cor-quinta: #fae1c0;
+}
