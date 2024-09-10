@@ -56,7 +56,7 @@ body{
 
 
 
-.formulario .btn-enviar{
+.formulario #btn-enviar{
     background-color: var(--cor-secunda);
     color: #FFFFFF;
     width: 400px; 
