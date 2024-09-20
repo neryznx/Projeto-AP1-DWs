@@ -2,10 +2,67 @@ body{
     font-family: "Oswald", sans-serif;
 }
 
-:root {
-    --cor-primeira: #332d27;
-    --cor-secunda: #8a0015;
-    --cor-terceira: #e30224;
-    --cor-quarta: #85725f;
-    --cor-quinta: #fae1c0;
+:root{
+    --color1: #332d27;
+    --color2: #8a0015;
+    --color3: #e30224;
+    --color4: #85725f;
+    --cor-fundo: #fae1c0;
+}
+
+body {
+    margin: 15px 30px 15px 30px;
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+}
+
+
+.topo{
+    display: inline;
+    align-items: end;
+    justify-content: end;
+    justify-items: space-between;
+}
+
+.nome-empresa{
+    display: flex;
+    gap: 80px;
+    width: 50%;
+    align-items: center;
+    color: var(--color1);
+}
+
+.login{
+    display: flex;
+    justify-items: flex-end;
+}
+
+.imagens__titulo{
+    color: var(--color2);
+    padding: 1% 5%;
+}
+
+.imagens__tipos{
+    color: var(--color2);
+    padding: 1% 5% 0% 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagens__fotos img {
+    max-width: 200px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    display: inline;
+    justify-content: end;
+}
+.imagens__fotos {
+    clear: both;
+    margin-top: 20px;
+}
+img {
+    vertical-align: middle;
+    object-fit: contain;
 }
