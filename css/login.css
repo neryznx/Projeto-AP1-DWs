@@ -54,10 +54,9 @@ button:hover{
   color: #8a0015;
   background-color: #FFF;
 }
-p{
-  color:#000000;
-  font-size: 14pt;
-  align-items: center;
+p {
+  width: 50%; /* Defina uma largura para o parágrafo */
+  margin: 0 auto; /* Isso centraliza o parágrafo horizontalmente */
 }
 a{
   color: #332d27;

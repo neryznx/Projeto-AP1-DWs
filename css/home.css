@@ -1,5 +1,10 @@
-body{
-    font-family: "Oswald", sans-serif;
+.html{
+    font-size: 62,5%
+}
+
+.body{
+    font-size: 1.6rem;
+    
 }
 
 :root{
@@ -7,62 +12,115 @@ body{
     --color2: #8a0015;
     --color3: #e30224;
     --color4: #85725f;
-    --cor-fundo: #fae1c0;
+    --cor-fundo: #ffffff;
 }
 
-body {
-    margin: 15px 30px 15px 30px;
-    box-sizing: border-box;
-    background-color: var(--cor-fundo);
+.corpo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 70vh 20vh;
+    background-color: var(--color1);
 }
 
-
-.topo{
-    display: inline;
-    align-items: end;
-    justify-content: end;
-    justify-items: space-between;
+.cabecalho{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-column: 1/5;
+}
+.imagem_logo{
+    display: grid;
+    grid-column: 1/5;
 }
 
-.nome-empresa{
+.nome_empresa{
     display: flex;
-    gap: 80px;
-    width: 50%;
-    align-items: center;
-    color: var(--color1);
+    align-items: top;
+    justify-content: center;
+    margin: 0% 10% 0% 0%;
 }
 
 .login{
     display: flex;
-    justify-items: flex-end;
+    align-items: right;
+    justify-content: flex-end;
+}
+
+.imagens{
+    display: grid;
+    grid-row: 2/6;
+    grid-column: 1/4;
+    background-color: var(--color4);
+    border: 2px;
+    border-radius: 8px;
 }
 
 .imagens__titulo{
-    color: var(--color2);
-    padding: 1% 5%;
-}
-
-.imagens__tipos{
-    color: var(--color2);
-    padding: 1% 5% 0% 2%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.imagens__fotos img {
-    max-width: 200px;
-    max-height:200px;
-    width: auto;
-    height: auto;
-    display: inline;
-    justify-content: end;
+.imagens__tipos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.imagens__fotos {
-    clear: both;
+
+.imagens img{
+    width: 17.188rem;
+    height: 9.375rem;
+    border:2px solid var(--color3);
+    border-radius: 8px;
+}
+
+.imagens__fotos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
 }
-img {
-    vertical-align: middle;
-    object-fit: contain;
+
+.imagens__estilo{
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+}
+
+
+.imagens__descrição{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: var(--cor-fundo)
+}
+
+
+.descrição{
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.imagens__estilo:hover,
+.imagens__estilo:focus {
+    width: 21.875rem;
+    height: 12.500rem;
+    transform: translateZ(75px) scale(1.2);
+}
+
+.esquerda{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 2/6;
+    background-color: var(--color2);
+    border: 2px;
+    border-radius: 8px;
+}
+
+.rodape{
+    display: grid;
+    grid-column:1/5;
+    height: 100px;
+    margin: 20px 0px 0px 0px ;
+    background-color: aquamarine;
 }
