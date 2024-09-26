@@ -1,46 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset='utf-8'>
-    <title>Page Title</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/login.css'>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/login.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src='../script/cadastro.js'></script>
+    <link href="/img/EP-VM-CLARO.png" rel="shortcut icon" type="image/x-icon" />
+    <title>Login</title>
 </head>
+
 <body>
-    <div class= 'container'>
+    <div id="Logomarca">
+        <a href="./index.html"><img src="/img/EP-TELHADO-PRETO edit.png" alt=""></img></a>
+    </div>
+    <div class='container'>
         <div class='login'>
-
             <h1>Entrar</h1>
-            <h3> Bem vindo ao Easy Place<h3>
-            <p>O lugar ideal para encontar o seu melhor destino!</p>
+            <h3>Bem-vindo ao Easy Place</h3>
+            <p>O lugar ideal para encontrar o seu melhor destino!</p>
 
-            <div class= 'label-float'>
-                <input type ='email' id="Email" placeholder="Email">
+            <div class='label-float'>
+                <input type='email' id="Email" placeholder="Email*" required>
                 <label for='Email'></label>
             </div>
 
-            <div class= 'label-float'>
-                <input type ='password'name="password" placeholder="Senha">
+            <div class='label-floatps'>
+                <input type='password' id="senha" placeholder="Senha*" required>
                 <label for='password'></label>
+                <i class="bi bi-eye-fill" id='btn-senha' onclick="mostrarSenha()"></i>
             </div>
-           <p>Esqueceu sua senha?
-                <a href="">Recuperar senha</a>
-            </p>
+
+            <p>Esqueceu sua senha? <a href="">Recuperar senha</a></p>
 
             <div class="justify-center">
-            <button>Entrar</button>
+                <button>Entrar</button>
             </div>
             <div class="justify-center">
                 <hr>
             </div>
-            <p>Não tem uma conta?
-                <a href="./cadastro.html">Cadastre-se</a>
-            </p>
-
+            <p>Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
         </div>
     </div>
+    <script src="./script/login.js"></script>
 </body>
 </html>

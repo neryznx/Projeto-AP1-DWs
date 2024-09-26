@@ -1,39 +1,30 @@
-const url = "https://go-wash-api.onrender.com/api/user";
-async login(){
-    let email= document.getElementById('email').value;
-    let password= document.getElementById('senha').value;
-    fetch(url,{
-        method: "POST",
-        body:JSON.stringify(
-            {
-                "email":email,
-                "user_type_id":1,
-                "password":password
-            }
-        ),
-        headers:{
-            'content-type': 'aplication/json' 
-        }
-    });
+function mostrarSenha() {
+    var inputPass = document.getElementById('senha');
+    var btnShowPass = document.getElementById('btn-senha');
 
-        if(api.ok){
-            let resposta = await api.json();
-            console.log(resposta);
-            return;
-        }
-        let respostaErrors = await api.json():
-        alert(respostaErrors.data.errors.email(0))
-        let respostaErrors = await api.json():
-        alert(respostaErrors.data.errors.password(0))
-
-
-
-
-
-    
-
-
-
-        } 
-        )  
+    if (inputPass.type === 'password') {
+        inputPass.setAttribute('type', 'text'); 
+        btnShowPass.classList.replace('bi-eye-fill', 'bi-eye-slash-fill'); 
+    } else {
+        inputPass.setAttribute('type', 'password'); 
+        btnShowPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill'); 
+    }
 }
+document.querySelector('button').addEventListener('click', function(event) {
+    var email = document.getElementById('Email');
+    var senha = document.getElementById('senha');
+    
+    if (email.value === "") {
+        alert("Por favor, preencha o campo de Email.");
+        email.focus();
+        event.preventDefault(); 
+        return;
+    }
+
+    if (senha.value === "") {
+        alert("Por favor, preencha o campo de Senha.");
+        senha.focus();
+        event.preventDefault();
+        return;
+    }
+});

@@ -225,9 +225,7 @@ background-color: whitesmoke;
         max-height: 10rem;
         overflow-y: scroll;
         flex-wrap: nowrap;
-    } */
-
-    }
+    } }
 
 
     /* ----------------------------------------------------------------- */
@@ -253,4 +251,4 @@ background-color: whitesmoke;
 
     .direitos {
         text-align: center;
-    } 
+    }

@@ -1,22 +1,3 @@
-const btnEnviar = document.getElementById('btn-enviar')
-const inputText = document.querySelectorAll('.input-text')
-const span = document.querySelectorAll('.obrigatorio')
-
-btnEnviar.addEventListener('click', () => {
-    inputText.forEach(function (input, indice) {
-        if (input.value === "") {
-            input.classList.remove('valido')
-            input.classList.add('erro')
-            span[indice].classList.add('campo-obrigatorio')
-        } else {
-            input.classList.remove('erro')
-            input.classList.add('valido')
-            span[indice].classList.remove('campo-obrigatorio')
-        }
-    })
-
-})
-
 const url = "https://go-wash-api.onrender.com/api/user";
 
 async function cadastro() {
@@ -49,17 +30,27 @@ async function cadastro() {
     console.log(resposta);
     return;
   }
-  let respostaErro = await api.json();
-  alert(respostaErro.data.errors.cpf_cnpj[0]);
-}
 
-// fetch(url,{objeto,
-//     method:
-//     body: JSON.stringify({
-//     }
-// ),
-// headers:(
-//     'Content-Type': 'application/json'
-// )
+    let respostaErro = await api.json();
+    alert(respostaErro.data.errors.cpf_cnpj[0]);
+    alert(respostaErro.data.errors.email[0]);
+    alert(respostaErro.data.errors.name[0]);
+  }
 
-// })
+const btnEnviar = document.getElementById('btn-enviar')
+const inputText = document.querySelectorAll('.input-text')
+const span = document.querySelectorAll('.obrigatorio')
+
+btnEnviar.addEventListener('click', () => {
+    inputText.forEach(function (input, indice) {
+        if (input.value === "") {
+            input.classList.remove('valido')
+            input.classList.add('erro')
+            span[indice].classList.add('campo-obrigatorio')
+        }else {
+            input.classList.remove('erro')
+            input.classList.add('valido')
+            span[indice].classList.remove('campo-obrigatorio')
+        }
+    })
+})
