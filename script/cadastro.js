@@ -17,7 +17,7 @@ async function cadastro() {
       user_type_id: 1,
       password: password,
       cpf_cnpj: cpf_cnpj,
-      terms: 1,
+      terms: terms,
       birthday: birthday,
     }),
     headers: {
@@ -27,19 +27,34 @@ async function cadastro() {
 
   if (api.ok) {
     let resposta = await api.json();
-    console.log(resposta);
+    alert(resposta);
     return;
   }
 
-    let respostaErro = await api.json();
+  let respostaErro = await api.json();
+  
+  
+  if(respostaErro.data && respostaErro.data.errors.cpf_cnpj){
     alert(respostaErro.data.errors.cpf_cnpj[0]);
-    alert(respostaErro.data.errors.email[0]);
-    alert(respostaErro.data.errors.name[0]);
+    return;
   }
+  
+  if(respostaErro.data && respostaErro.data.errors.email){
+    alert(respostaErro.data.errors.email[0]);
+    return;
+  }
+
+  if(respostaErro.data && respostaErro.data.errors.email){
+    alert(respostaErro.data.errors.name[0]);
+    return;
+  }
+
+}
 
 const btnEnviar = document.getElementById('btn-enviar')
 const inputText = document.querySelectorAll('.input-text')
 const span = document.querySelectorAll('.obrigatorio')
+
 
 btnEnviar.addEventListener('click', () => {
     inputText.forEach(function (input, indice) {
