@@ -27,7 +27,7 @@ async function cadastro() {
 
   if (api.ok) {
     let resposta = await api.json();
-    alert(resposta);
+    alert(resposta.data);
     return;
   }
 
