@@ -1,128 +1,150 @@
-.html{
-    font-size: 62,5%
-}
-
-.body{
-    font-size: 1.6rem;
+body{
+    font-family: "Oswald", sans-serif;
+    justify-content: center;
+    align-items: relative;
+    background-image: url(/img/blob-scene-haikei.svg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
     
-}
+  }
+  
+  /* ------------------------------------------------------- Header ------------------------------------------------------- */
+  .bg {
+    height: 110px;
+    width: 100%;
+    background-color: #fff;
+    background-attachment: fixed;
+    top:0;
+    left: 0;
+  }
+  
+  
+  .titulo {
+    text-align: center;
+    color:  #000000;
+    margin: 0;
+    padding: 0;
+  } 
+  
+  .imglogo {
+    width: 50%;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+  }
+  
 
-:root{
-    --color1: #332d27;
-    --color2: #8a0015;
-    --color3: #e30224;
-    --color4: #85725f;
-    --cor-fundo: #ffffff;
-}
+  hr2 {
+    border: none;
+    height:fit-content;
+    background-color:  rgb(0,0,0);
+  }
+  .corlink{
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .login{
+    text-align: right;
+  }
+  
+  .accordion {
+    background-color: white; 
+    color: black ;
+    cursor: pointer;
+    padding-top: 50px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 1.0s;
+  }
+  
+    .accordion.active {
+      background-color: white;
+    }
+  
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      color: black;
+      display: none;
+      overflow: hidden;
+      position: fixed;
+    }
 
-.corpo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 70vh 20vh;
-    background-color: var(--color1);
-}
-
-.cabecalho{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
-    grid-column: 1/5;
-}
-.imagem_logo{
-    display: grid;
-    grid-column: 1/5;
-}
-
-.nome_empresa{
+  
+  
+  /* ------------------------------------------------------- Body ------------------------------------------------------- */
+  
+  .nome-empresa{
     display: flex;
-    align-items: top;
+    padding: 120px;
+    margin-left: 100px;
+    font-style: sans-serif;
+  }
+
+  .imagemcasa{
+    width: 95%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  
+  .imagempredio{
+    width: 70%;
+  }
+  
+  h2 {
+    padding-top: 100px;
+  }
+
+  .titulo-lugares{
+    display: flex;
     justify-content: center;
-    margin: 0% 10% 0% 0%;
-}
-
-.login{
+    margin-left: -250px;
+  }
+  
+  .caixa_imagens {
     display: flex;
-    align-items: right;
-    justify-content: flex-end;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 6%;
+    margin-right: 70px;
+    padding-bottom: 70px;
+    align-items: center;
+    margin-bottom: 75px;
 }
 
-.imagens{
-    display: grid;
-    grid-row: 2/6;
-    grid-column: 1/4;
-    background-color: var(--color4);
-    border: 2px;
+.imagens_hospedagens{
+    width: 95%;
+    padding-top: 60px;
+    padding-bottom: 100px;
     border-radius: 8px;
+  }
+
+  /* ------------------------------------------------------- Footer ------------------------------------------------------- */
+  
+  .informacao{
+    text-align: center;
+} 
+footer {
+    background-color: #1C1C1C;
+    color: white;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 2rem 0;
 }
 
-.imagens__titulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer .row {
+    margin: 0;
 }
 
-.imagens__tipos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.direitos {
+    text-align: center;
 }
-
-.imagens img{
-    width: 17.188rem;
-    height: 9.375rem;
-    border:2px solid var(--color3);
-    border-radius: 8px;
-}
-
-.imagens__fotos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.imagens__estilo{
-    transition: transform 1s;
-    transform: translateX(0) scale(1);
-}
-
-
-.imagens__descrição{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    color: var(--cor-fundo)
-}
-
-
-.descrição{
-    padding: 3rem 3rem 3rem 3rem;
-}
-
-.imagens__estilo:hover,
-.imagens__estilo:focus {
-    width: 21.875rem;
-    height: 12.500rem;
-    transform: translateZ(75px) scale(1.2);
-}
-
-.esquerda{
-    display: grid;
-    grid-column: 4/5;
-    grid-row: 2/6;
-    background-color: var(--color2);
-    border: 2px;
-    border-radius: 8px;
-}
-
-.rodape{
-    display: grid;
-    grid-column:1/5;
-    height: 100px;
-    margin: 20px 0px 0px 0px ;
-    background-color: aquamarine;
-}
-
-

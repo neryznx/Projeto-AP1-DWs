@@ -17,7 +17,7 @@
     <div class="col-md-12">
         <div class="row col-md-12">
             <div class="col-md-1">
-                <p><img src="/img/EP-TELHADO-VM-ESCURO-edit 2.png" alt="logotipo"></p>
+                <a href="/home.html" ><img src="/img/EP-TELHADO-VM-ESCURO-edit 2.png" alt="logotipo"></a>
             </div>
 
             <!-- <div class="col-md-1 offset-md-9">
@@ -45,37 +45,33 @@
             </div>
 
                         <div class="formulario">
-                            <form class="formulario-form">
                                 
                         <div class="inputs">
                             <label for="title"></label>
-                            <input type="text" name="title" id="title" placeholder="Titulo *">
+                            <input type="text" name="title" id="title" placeholder="Titulo *" required>
                         </div>
                         <div class="inputs">            
                             <label for="cep"></label>
-                            <input type="text" name="Cep" id="cep" placeholder="Cep *">
+                            <input type="text" name="Cep" id="cep" placeholder="Cep *" required>
                         </div>
                         <div class="inputs">             
                             <label for="address"></label>
-                            <input type="text" name="" id="address" placeholder="Endereço *">
+                            <input type="text" name="" id="address" placeholder="Endereço *" required>
                         </div>
                         <div class="inputs">            
                             <label for="number"></label>
-                            <input type="text" name="number" id="number" placeholder="Numero *">
+                            <input type="text" name="number" id="number" placeholder="Numero *" required>
                         </div>
 
                         <div class="inputs">
                             <label for="complement"></label>
-                            <input type="text" name="complement" id="complement" placeholder="Complemento *">
+                            <input type="text" name="complement" id="complement" placeholder="Complemento *" required>
                         </div>
 
+                        <div >
+                            <input type="button"class="finish-button"value="Cadastrar" onclick="endereco()"/>
+                        </div>   
 
-
-                            </form>
-
-                        <div class="finish-button">
-                            <button id = "botao-endereco" onclick="endereco()">CADASTRAR</button>
-                        </div>    
                         </div>                                        
                         
                         
@@ -102,8 +98,8 @@
                     
             <div class="col-md 2">
                 <p><img src="/img/EP-TELHADO-VM-ESCURO-edit 2.png" alt="logoeasyplace"></p>
-                <p><i class="fa-brands fa-instagram"></i></p>
-                <p><i class="fa-brands fa-facebook"></i></p>
+                <p><a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></p>
+<p><a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></p>
             </div>
 
         </div>
@@ -112,7 +108,7 @@
     <section class="direitos">
         <p> EasyPlace &#169 Copyright Easy Place S.A. - Todos os direitos reservados</p>
     </section> 
-     
+
 </footer>
 
 </body>

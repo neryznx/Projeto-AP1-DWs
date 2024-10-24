@@ -116,7 +116,7 @@ input {
     margin-left: 55px;
 }
 
-button {
+.button {
     border: none;
     background-color:  #000 ;
     color: #fff;
@@ -131,7 +131,7 @@ button {
     margin-top: -15px;
 }
 
-button:hover{
+.button:hover{
     transition: 1.1s;
     border: 2px solid #8a0015;
     color: #8a0015;
@@ -186,8 +186,7 @@ button:hover{
 }
 
 
-
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1280px) {
     .form-image {
         display: none;
     }
@@ -199,7 +198,7 @@ button:hover{
     }
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1024px) {
     .container {
         width: 90%;
         height: auto;

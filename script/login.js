@@ -20,8 +20,6 @@ async function login() {
     if (!email || !password) {
         return mostrarMensagemErro("Preencha todos os campos!");
     }
-
-    try {
         const api = await fetch(url, {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
@@ -35,18 +33,8 @@ async function login() {
             localStorage.setItem("user", JSON.stringify(resposta.user));
             alert("Login feito com sucesso!");
             window.location = "./home.html";
-        } else {
-            const errorMsg = resposta.data?.errors || "Usuário não está ativo.";
-            mostrarMensagemErro(errorMsg);
         }
-
-    } catch (error) {
-        console.error("Erro na requisição:", error);
-        mostrarMensagemErro("Erro de conexão com o servidor.");
+        if(resposta.data.errors){
+            alert(resposta.data.errors);
+        }
     }
-}
-
-function mostrarMensagemErro(mensagem) {
-    document.getElementById("msgError").innerHTML = mensagem;
-    alert(mensagem);
-}
